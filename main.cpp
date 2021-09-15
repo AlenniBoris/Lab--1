@@ -1,11 +1,11 @@
 #include <iostream>
 #include<iomanip>
 #include<cmath>
-#include<math.h>
+
 using namespace std;
 int main(){
     int x, k, t;
-    double e, b, znak, result, slag;
+    long double result;
 
 
     result = 1;
@@ -20,7 +20,7 @@ int main(){
         std::cin >> k;
     }
 
-    b= pow(10,-k);
+    double b= pow(10,-k);
 
 
 
@@ -36,14 +36,14 @@ int main(){
 
     while (1==1){
         long double fact = 1; //Чтобы сохраняло в себе результат с большим количеством символов
-        znak = pow(-1,n);
-        double iks = pow(x,n);
+        int znak = pow(-1,n);
+        signed long int iks = pow(x,n);
         for (int f = n;f > 0;f--){
             fact *= f;
         }
-        slag = (znak*iks)/fact;
+        long double slag = (znak*iks)/fact;
         if (slag<b){
-
+            result = result - slag;
             double znach = exp(-x);
             cout << "Function answer e^(-x): ";cout <<fixed<<setprecision(t)<<znach<<endl;
             cout << "Function answer Teilor: ";cout  <<fixed<<setprecision(t)<<result<<endl;
