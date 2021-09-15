@@ -1,0 +1,3 @@
+C:/Proga for BSU/Lab--2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Proga for BSU/Lab--2/cmake-build-debug/CMakeFiles/Lab__2.dir
+C:/Proga for BSU/Lab--2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
