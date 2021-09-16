@@ -3,12 +3,14 @@
 #include<cmath>
 
 using namespace std;
+
 int main(){
-    int x, k, t;
-    long double result;
+    double x, znak,firstslag;
+    double k, slag,b;
 
+    int t;
 
-    result = 1;
+    firstslag = 1;
 
     std::cout << "input x:";
     std::cin >> x;
@@ -20,10 +22,6 @@ int main(){
         std::cin >> k;
     }
 
-    double b= pow(10,-k);
-
-
-
 
     std::cout << "input number of symbols:";
     std::cin >> t;
@@ -32,33 +30,38 @@ int main(){
         std::cin >> t;
     }
 
-    int n = 1;
+    b = pow(10, -k);
+    int n=1;
 
-    while (1==1){
-        long double fact = 1; //Чтобы сохраняло в себе результат с большим количеством символов
-        int znak = pow(-1,n);
-        signed long int iks = pow(x,n);
-        for (int f = n;f > 0;f--){
-            fact *= f;
-        }
-        long double slag = (znak*iks)/fact;
-        if (slag<b){
-            result = result - slag;
-            double znach = exp(-x);
-            cout << "Function answer e^(-x): ";cout <<fixed<<setprecision(t)<<znach<<endl;
-            cout << "Function answer Teilor: ";cout  <<fixed<<setprecision(t)<<result<<endl;
+    while(true) {
+        long double factorial = 1.0;
+        double iks = pow(x, n);
+        znak = pow(-1, n);
 
-            double razn = abs(result-znach);
-            cout << "Difference between Teilor and e^(-x) "<<fixed<<setprecision(t)<<razn<<endl;
 
-            break;
+        for (int f = n; f > 0; f--) {
+            factorial *= f;
         }
 
-        result = result + slag;
-        cout << "Function Teilor: ";cout <<fixed<<setprecision(t)<<result<<endl;
+        slag = ((znak * iks) / factorial);
 
-    };
 
+        if (abs(slag) < b) {
+
+            double ResultExponent = exp(-x);
+            double ResultTeilor = abs(firstslag + slag);
+            double AnswerDifference = abs(ResultTeilor - ResultExponent);
+
+            cout << "Function answer e^(-x):";
+            cout << fixed << setprecision(t) << ResultExponent << endl;
+            cout << "Function answer Teilor:";
+            cout << fixed << setprecision(t) << ResultTeilor << endl;
+            cout << "Difference between Teilor and e^(-x)" << fixed << setprecision(t) << AnswerDifference << endl;
+            exit(0);
+        }
+        firstslag = firstslag + slag;
+        n++;
+    }
 
     return 0;
 }
