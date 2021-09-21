@@ -4,9 +4,9 @@
 
 using namespace std;
 
-int main(){
-    double x, znak,firstslag;
-    double k, slag,b;
+int main() {
+    double x, znak, firstslag;
+    double k, slag, b;
 
     int t;
 
@@ -17,7 +17,7 @@ int main(){
 
     std::cout << "input k:";
     std::cin >> k;
-    while (k<=1){
+    while (k <= 1) {
         std::cout << "input k from 2 to infinity\n";
         std::cin >> k;
     }
@@ -25,15 +25,15 @@ int main(){
 
     std::cout << "input number of symbols:";
     std::cin >> t;
-    while (t<=0){
+    while (t <= 0) {
         std::cout << "input positive t\n";
         std::cin >> t;
     }
 
     b = pow(10, -k);
-    int n=1;
+    int n = 1;
 
-    while(true) {
+    for (n;; n++) {
         long double factorial = 1.0;
         double iks = pow(x, n);
         znak = pow(-1, n);
@@ -60,8 +60,10 @@ int main(){
             exit(0);
         }
         firstslag = firstslag + slag;
-        n++;
+
     }
 
     return 0;
 }
+
+

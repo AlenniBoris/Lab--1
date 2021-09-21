@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Proga for BSU/Lab--2/main.cpp" "C:/Proga for BSU/Lab--2/cmake-build-debug/CMakeFiles/Lab__2.dir/main.cpp.obj"
+  "C:/Proga for BSU/Lab--1/main.cpp" "C:/Proga for BSU/Lab--1/cmake-build-debug/CMakeFiles/Lab__2.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
