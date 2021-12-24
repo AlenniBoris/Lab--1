@@ -33,10 +33,10 @@ NULL=nul
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f
+RM = "C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -74,18 +74,39 @@ CMakeFiles\Lab__2.dir\main.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Lab__2.dir\main.cpp.s /c "C:\Proga for BSU\Lab--1\main.cpp"
 <<
 
+CMakeFiles\Lab__2.dir\Solution.cpp.obj: CMakeFiles\Lab__2.dir\flags.make
+CMakeFiles\Lab__2.dir\Solution.cpp.obj: ..\Solution.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Proga for BSU\Lab--1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab__2.dir/Solution.cpp.obj"
+	C:\PROGRA~2\MIB055~1\2019\ENTERP~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Lab__2.dir\Solution.cpp.obj /FdCMakeFiles\Lab__2.dir\ /FS -c "C:\Proga for BSU\Lab--1\Solution.cpp"
+<<
+
+CMakeFiles\Lab__2.dir\Solution.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab__2.dir/Solution.cpp.i"
+	C:\PROGRA~2\MIB055~1\2019\ENTERP~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\Lab__2.dir\Solution.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Proga for BSU\Lab--1\Solution.cpp"
+<<
+
+CMakeFiles\Lab__2.dir\Solution.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab__2.dir/Solution.cpp.s"
+	C:\PROGRA~2\MIB055~1\2019\ENTERP~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Lab__2.dir\Solution.cpp.s /c "C:\Proga for BSU\Lab--1\Solution.cpp"
+<<
+
 # Object files for target Lab__2
 Lab__2_OBJECTS = \
-"CMakeFiles\Lab__2.dir\main.cpp.obj"
+"CMakeFiles\Lab__2.dir\main.cpp.obj" \
+"CMakeFiles\Lab__2.dir\Solution.cpp.obj"
 
 # External object files for target Lab__2
 Lab__2_EXTERNAL_OBJECTS =
 
 Lab__2.exe: CMakeFiles\Lab__2.dir\main.cpp.obj
+Lab__2.exe: CMakeFiles\Lab__2.dir\Solution.cpp.obj
 Lab__2.exe: CMakeFiles\Lab__2.dir\build.make
 Lab__2.exe: CMakeFiles\Lab__2.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Proga for BSU\Lab--1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Lab__2.exe"
-	"C:\Program Files\JetBrains\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\Lab__2.dir --rc=C:\WINDOW~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\WINDOW~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MIB055~1\2019\ENTERP~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\Lab__2.dir\objects1.rsp @<<
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Proga for BSU\Lab--1\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Lab__2.exe"
+	"C:\Program Files\JetBrains\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\Lab__2.dir --rc=C:\WINDOW~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\WINDOW~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MIB055~1\2019\ENTERP~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\Lab__2.dir\objects1.rsp @<<
  /out:Lab__2.exe /implib:Lab__2.lib /pdb:"C:\Proga for BSU\Lab--1\cmake-build-debug\Lab__2.pdb" /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<
 

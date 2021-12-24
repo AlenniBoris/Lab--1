@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Proga for BSU/Lab--1/main.cpp
+C:/Proga for BSU/Lab--1/Solution.h
 iostream
 -
 iomanip
 -
 cmath
 -
+cassert
+-
+
+C:/Proga for BSU/Lab--1/main.cpp
+Solution.h
+C:/Proga for BSU/Lab--1/Solution.h
 
